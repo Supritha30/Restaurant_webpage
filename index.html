@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Hungry Panda</title>
+        <link  href="css/style.css" rel="stylesheet" type="text/css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+
+</style>
+
+    </head>
+
+<body background="C:\Users\Hp\Documents\webproject\html\food\image\Free herb spice Photos & Pictures _ Page 3.jfif"  >
+    <header class="main">
+     
+<div class="w3-content w3-section" >
+    <h2>HUNGRY PANDA</h2>
+    <h3>Good food is not just about the ingredients;<br> it's about the love and passion that goes into making it.</h3>
+     <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="service.html">Service</a></li>
+           
+        </ul>
+    </nav>
+
+  <img class="mySlides" src="image/be63ba05-4b4e-495f-a180-9697cb84e053.jpg" style="width:100%">
+  <img class="mySlides" src="image/e4cee4be-b376-46c5-90ff-f605d3f3604e.jpg" style="width:100%">
+  <img class="mySlides" src="image/92cc9a38-0ad6-44eb-a44f-84ac383f0e59.jpg" style="width:100%">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+      </header>
+       
+       
+        <footer class="footer">
+                <p style="background-color: floralwhite;">copyright &copy;- All rights reserved.designed and developed by shsu</p>
+        </footer>
+    </body>
+</html>
